@@ -1,0 +1,77 @@
+* { 
+  box-sizing: border-box; 
+  margin: 0; 
+}
+
+body { 
+  font-family: system-ui, -apple-system, sans-serif; 
+  background-color: #fdf5f5; 
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #a37272;
+  padding: 1rem 2rem;
+  position: relative;
+  box-shadow: 0 4px 15px rgba(163, 114, 114, 0.2);
+}
+
+.logo { 
+  color: #ffffff; 
+  font-weight: 600; 
+  font-size: 1.2rem; 
+}
+
+.menu-toggle { 
+  display: none; 
+}
+
+.hamburguesa {
+  display: none;
+  color: #ffffff;
+  font-size: 1.8rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+.nav-links a { 
+  color: #fdf5f5; 
+  text-decoration: none; 
+  font-weight: 500;
+}
+
+@media (max-width: 700px) {
+  .hamburguesa { 
+    display: block; 
+  }
+
+  .nav-links {
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #a37272;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  .menu-toggle:checked ~ .nav-links {
+    max-height: 250px;
+  }
+
+  .nav-links li { 
+    padding: 0.8rem 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+  }
+}

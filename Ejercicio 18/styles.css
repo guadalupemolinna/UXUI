@@ -1,0 +1,31 @@
+body { 
+  font-family: sans-serif; 
+  background-color: #fdf5f5;
+  margin: 2rem; 
+}
+
+.mosaico {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  grid-auto-rows: 140px;
+  grid-auto-flow: dense;
+  gap: 0.8rem;
+}
+
+.mosaico img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(163, 114, 114, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.mosaico img:hover {
+  transform: scale(1.02);
+}
+
+.mosaico .grande {
+  grid-column: span 2;
+  grid-row: span 2;
+}

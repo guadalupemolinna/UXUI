@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejercicio 20 - Vinilos Groove</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">Groove<span>Discos</span></div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#servicios">Catálogo</a></li>
+        <li><a href="#testimonios">Opiniones</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <div class="hero-texto">
+        <h1>El sonido auténtico del vinilo en tu casa</h1>
+        <p>Explorá nuestra selección exclusiva de clásicos del rock, jazz y las últimas joyitas independientes.</p>
+        <a href="#servicios" class="btn-cta">Ver catálogo</a>
+      </div>
+    </section>
+
+    <section id="servicios" class="servicios">
+      <h2>Nuestros Estilos</h2>
+      <div class="grid-servicios">
+        <article class="servicio-card">
+          <h3>Rock Nacional</h3>
+          <p>Las mejores ediciones y reediciones de la historia del rock argentino.</p>
+        </article>
+        <article class="servicio-card">
+          <h3>Jazz & Blues</h3>
+          <p>Importaciones directas de los sellos más legendarios del género.</p>
+        </article>
+        <article class="servicio-card">
+          <h3>Ediciones Limitadas</h3>
+          <p>Vinilos de color, box sets numerados y rarezas para coleccionistas.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="testimonios" class="testimonios">
+      <h2>Lo que dicen los coleccionistas</h2>
+      <div class="carrusel">
+        <div class="testimonio-card">
+          <p>"Los vinilos llegaron impecables y con un packaging súper seguro."</p>
+          <span>— Ramiro T.</span>
+        </div>
+        <div class="testimonio-card">
+          <p>"Excelente atención y catálogo de primera. ¡Conseguí una joya que buscaba hace años!"</p>
+          <span>— Julieta M.</span>
+        </div>
+        <div class="testimonio-card">
+          <p>"El sonido y la calidad de las ediciones son de otro planeta."</p>
+          <span>— Esteban K.</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="contacto">
+      <h2>Consultanos por un título</h2>
+      <form action="#" method="post">
+        <div class="campo">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required>
+        </div>
+        <div class="campo">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="campo">
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+        </div>
+        <button type="submit">Enviar consulta</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 GrooveDiscos. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>

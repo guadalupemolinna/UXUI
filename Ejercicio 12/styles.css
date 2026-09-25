@@ -1,0 +1,83 @@
+
+body {
+  font-family:sans-serif;
+  background-color: #fdf5f5; 
+  color: #5c4d4d;
+  min-height: 200vh; 
+  margin: 0;
+  padding: 40px;
+}
+
+.contenedor {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+
+.tooltip-padre {
+  position: relative; 
+  display: inline-block;
+  background-color: #f2cdcd;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: help;
+  margin-top: 20px;
+}
+
+
+.tooltip-hijo {
+  position: absolute; 
+  bottom: 130%; 
+  left: 50%;
+  transform: translateX(-50%);
+  
+  background-color: #a37272;
+  color: #ffffff;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  white-space: nowrap;
+  
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  z-index: 10; 
+}
+
+
+.tooltip-padre:hover .tooltip-hijo {
+  opacity: 1;
+  visibility: visible;
+  bottom: 140%; 
+}
+
+.texto-scroll {
+  margin-top: 50px;
+  color: #a37272;
+  font-style: italic;
+}
+
+
+.btn-volver {
+  position: fixed; 
+  bottom: 80px;
+  right: 30px;
+  
+  background-color: #d18282;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 14px 22px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  box-shadow: 0 4px 15px rgba(209, 130, 130, 0.4);
+  
+  z-index: 100; 
+  transition: all 0.3s ease;
+}
+
+.btn-volver:hover {
+  background-color: #b06b6b;
+  transform: translateY(-4px); 
+}

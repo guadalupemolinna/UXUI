@@ -1,0 +1,65 @@
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  background-color: #fdf5f5;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px; 
+}
+
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid #f2cdcd;
+  border-top: 5px solid #a37272; 
+  border-radius: 50%;
+  
+ 
+  animation: girar 1s linear infinite;
+}
+
+
+@keyframes girar {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.tarjeta {
+  background-color: #a37272;
+  color: #ffffff;
+  padding: 20px 30px;
+  border-radius: 8px;
+  font-weight: 500;
+  box-shadow: 0 8px 20px rgba(163, 114, 114, 0.3);
+  
+ 
+  animation: aparecerSubiendo 0.8s ease-out forwards;
+  
+ 
+  opacity: 0; 
+}
+
+
+@keyframes aparecerSubiendo {
+  0% {
+    opacity: 0;
+    transform: translateY(40px); 
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

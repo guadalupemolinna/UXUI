@@ -1,0 +1,20 @@
+body { font-family: Arial, sans-serif; margin: 2rem; }
+
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+.producto {
+  flex: 1 1 200px;
+  max-width: 220px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+}
+.producto img {
+  max-width: 100%;
+  border-radius: 4px;
+}

@@ -1,0 +1,70 @@
+:root {
+
+  --color-primario: #d18282;
+  --color-secundario: #a37272;
+  --color-fondo: #fdf5f5;
+  --color-texto: #5c4d4d;
+  --espaciado: 1.5rem;
+  --radio-borde: 12px;
+}
+
+body.oscuro {
+
+  --color-fondo: #2c2424; 
+  --color-texto: #f9f0f0; 
+  --color-primario: #e6baba;
+  --color-secundario: #c27f7f;
+}
+
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+  margin: 0;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: var(--espaciado);
+}
+
+h1 { 
+  color: var(--color-primario); 
+  margin: 0;
+}
+
+button {
+  background-color: var(--color-secundario);
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: var(--radio-borde);
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+.card {
+  padding: var(--espaciado);
+  border: 2px solid var(--color-primario);
+  border-radius: var(--radio-borde);
+  width: 100%;
+  max-width: 500px;
+  box-sizing: border-box;
+}

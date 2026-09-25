@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejercicio 14</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="topbar">
+    <h1>Variables CSS</h1>
+    <button id="toggle-tema">Modo oscuro</button>
+  </div>
+  <p>este texto y todo el sitio usan variables CSS definidas en <code>:root</code>, lo que permite cambiar el tema fácilmente.</p>
+  <div class="card">tarjeta de ejemplo usando las variables</div>
+
+  <script>
+    document.getElementById('toggle-tema').addEventListener('click', function () {
+      document.body.classList.toggle('oscuro');
+    });
+  </script>
+</body>
+</html>

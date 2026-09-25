@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio 6</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="principal">
+    <p>Párrafo directo del contenedor <span>con un span</span>.</p>
+
+    <div class="card">
+      <p>Párrafo dentro de <span>.card</span> (selector descendiente).</p>
+      <p class="destacado">Párrafo con clase <span>.destacado</span>.</p>
+    </div>
+
+    <div class="card card-alerta">
+      <p>Otra tarjeta con dos clases: <span>.card.card-alerta</span>.</p>
+      <p>Este párrafo hereda el estilo <span>.card p</span>.</p>
+    </div>
+
+    <div>
+      <p>Un &lt;div&gt; sin clase: solo le afectan los selectores de etiqueta.</p>
+    </div>
+  </div>
+</body>
+</html>

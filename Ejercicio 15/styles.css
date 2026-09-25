@@ -1,0 +1,85 @@
+
+* { 
+  box-sizing: border-box; 
+  margin: 0; 
+}
+
+body { 
+  font-family: system-ui, -apple-system, sans-serif; 
+  background-color: #fdf5f5;
+  color: #5c4d4d;
+}
+
+.layout {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "sidebar contenido"
+    "footer footer";
+  grid-template-columns: 250px 1fr;
+  grid-template-rows: 80px 1fr 60px;
+  min-height: 100vh;
+}
+
+.header { 
+  grid-area: header; 
+  background-color: #a37272; 
+  color: #ffffff; 
+  display: flex; 
+  align-items: center; 
+  padding: 0 2rem;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.sidebar { 
+  grid-area: sidebar; 
+  background-color: #f2cdcd; 
+  padding: 2rem; 
+}
+
+.contenido { 
+  grid-area: contenido; 
+  background-color: #ffffff;
+  padding: 2rem; 
+}
+
+.footer { 
+  grid-area: footer; 
+  background-color: #5c4d4d; 
+  color: #ffffff; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  font-size: 0.9rem;
+}
+
+
+@media (max-width: 768px) {
+  .layout {
+    grid-template-areas:
+      "header"
+      "contenido"
+      "footer";
+    grid-template-columns: 1fr; 
+  }
+  
+  .sidebar {
+    display: none; 
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 0 1rem;
+    font-size: 1rem;
+  }
+  
+  .contenido {
+    padding: 1.5rem 1rem;
+  }
+  
+  .footer {
+    font-size: 0.8rem;
+  }
+}
